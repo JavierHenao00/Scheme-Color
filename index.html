@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheme Web</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+   
+    <img src="/source/pngegg.png" alt="">
+    <h1>Scheme Colors</h1>
+
+    <div id="Menu">
+
+        <div class="container-options">
+            <label for="seek">Choice the color</label>
+            <input id="seek" type="color" value="seek" name="seek" >
+            
+        </div>
+
+        <div class="container-options">
+            <label for="select">Select the Scheme </label>
+            <select id="select" name="select">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select> 
+        </div>
+        
+        <div class="container-options">
+            <button id="color-btn">Get color scheme</button>
+        </div>
+       
+    </div>
+
+    <div id="container-color">
+         
+        <div class="colors">
+            <div class="color-show" onclick="copyText(0)"></div>
+            <p class="hex-text" onclick="copyText(0)"></p>
+        </div>
+        <div class="colors">
+            <div class="color-show" onclick="copyText(1)"></div>
+            <p class="hex-text" onclick="copyText(1)"></p>
+        </div>
+        <div class="colors">
+            <div class="color-show" onclick="copyText(2)"></div>
+            <p class="hex-text" onclick="copyText(2)"></p>
+        </div>
+        <div class="colors">
+            <div class="color-show" onclick="copyText(3)"></div>
+            <p class="hex-text" onclick="copyText(3)"></p>
+        </div>
+        <div class="colors">
+            <div class="color-show" onclick="copyText(4)"></div>
+            <p class="hex-text" onclick="copyText(4)"></p>
+        </div>
+        
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
+
+
